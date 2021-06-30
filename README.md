@@ -1,8 +1,10 @@
-# Microsite Backend FastAPI Project
+# Merit TODOS Project
 
 ## How to setup project?
 
-### Clone the project from Gitlab
+### --------- BACKEND ---------
+
+### Clone the project from Github
 
 git clone this project or download the project to your computer locally
 
@@ -23,44 +25,22 @@ docker-compose exec backend alembic upgrade head
 1. Open your web browser of choice
 1. In the URL enter: http://0.0.0.0:3000/docs
 
-## Development Commands
+### --------- FRONTEND ---------
 
-### Check the status of the docker containers
+### Move to Frontend Folder
 
 ```sh
-docker-compose ps -a
+cd ../frontend
 ```
 
-### Check logs of fastapi server
+### Install All Packages
 
 ```sh
-docker-compose logs -f --tail 10 backend
+npm install
 ```
 
-### Stop the server
+### Run Application
 
 ```sh
-docker-compose stop
-```
-
-### Down the server
-
-```sh
-docker-compose down
-```
-
-## Alembic DB Migrations
-
-Alembic is used for generating migrations for the database with SQL Alchemy.
-
-### Create an autogenerate migration
-
-```sh
-docker-compose -f docker-compose.yml run backend alembic revision --autogenerate -m [commit message]
-```
-
-### Running a Migration
-
-```sh
-docker-compose -f docker-compose.yml run backend alembic upgrade head
+npm start
 ```
