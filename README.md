@@ -1,4 +1,4 @@
-# Merit TODOS Project
+# Merit TODOs Project
 
 ## How to setup project?
 
@@ -44,3 +44,5 @@ npm install
 ```sh
 npm start
 ```
+
+Developed by: Israr Ali
